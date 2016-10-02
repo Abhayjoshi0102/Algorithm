@@ -33,7 +33,13 @@ public class SearchingAlgorithms {
         int lowerBound = 0;
         int upperBound = array.length -1;
         while (lowerBound <= upperBound) {
-            int midPoint = (lowerBound + upperBound)/2;
+            // Commenting below line for calculating midPoint using (lowerBound + upperBound)/2 formula.
+            // This formula can create problem for really big size array, if sum of lowerBound and upperBound is going beyond
+            // is going beyond the limit of int. Instead use lowerBound + (upperBound - lowerBound)/2
+
+            // int midPoint = (lowerBound + upperBound)/2;
+
+           int midPoint =  lowerBound + (upperBound - lowerBound)/2;
            if (numberToBeSearched == array[midPoint]) {
                return midPoint;
            }
@@ -59,7 +65,13 @@ public class SearchingAlgorithms {
     }
 
     private static int binarySearchRecursionHelper(int numberToBeSearched, int [] array,int lowerBound, int upperBound) {
-        int midPoint = (lowerBound + upperBound)/2;
+        // Commenting below line for calculating midPoint using (lowerBound + upperBound)/2 formula.
+        // This formula can create problem for really big size array, if sum of lowerBound and upperBound is going beyond
+        // is going beyond the limit of int. Instead use lowerBound + (upperBound - lowerBound)/2
+
+        // int midPoint = (lowerBound + upperBound)/2;
+
+        int midPoint =  lowerBound + (upperBound - lowerBound)/2;
         int searchItemNotFound = -1;
          if (lowerBound <= upperBound) {
             if(numberToBeSearched == array[midPoint]) {
