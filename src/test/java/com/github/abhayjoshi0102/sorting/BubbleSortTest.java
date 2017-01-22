@@ -1,4 +1,4 @@
-package com.github.abhayjoshi0102.Sorting;
+package com.github.abhayjoshi0102.sorting;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

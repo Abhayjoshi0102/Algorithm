@@ -1,4 +1,4 @@
-package com.github.abhayjoshi0102.Searching;
+package com.github.abhayjoshi0102.searching;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

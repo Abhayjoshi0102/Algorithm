@@ -1,4 +1,4 @@
-package com.github.abhayjoshi0102;
+package com.github.abhayjoshi0102.miscellaneous;
 
 /**
  * Problem Statement:

@@ -1,10 +1,10 @@
-package com.github.abhayjoshi0102.Searching;
+package com.github.abhayjoshi0102.searching;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 /**
- * Test com.github.abhayjoshi0102.Searching.FindFirstOne class.
+ * Test com.github.abhayjoshi0102.searching.FindFirstOne class.
  */
 
 public class FindFirstOneTest extends TestCase {
@@ -13,7 +13,7 @@ public class FindFirstOneTest extends TestCase {
     }
 
     public static Test suite() {
-        return new TestSuite(com.github.abhayjoshi0102.Searching.FindFirstOneTest.class );
+        return new TestSuite(com.github.abhayjoshi0102.searching.FindFirstOneTest.class );
     }
 
     public void testFindFirstOne() {

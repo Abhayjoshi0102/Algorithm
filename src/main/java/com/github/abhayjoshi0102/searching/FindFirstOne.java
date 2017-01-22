@@ -1,4 +1,4 @@
-package com.github.abhayjoshi0102.Searching;
+package com.github.abhayjoshi0102.searching;
 
 /**
  * Problem statement: Given an array containing only 0s and 1s in sorted order. Find the first occurrence of 1 in array.

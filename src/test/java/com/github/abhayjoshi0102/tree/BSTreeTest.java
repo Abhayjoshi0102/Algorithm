@@ -1,4 +1,4 @@
-package com.github.abhayjoshi0102.Tree;
+package com.github.abhayjoshi0102.tree;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
@@ -11,7 +11,7 @@ public class BSTreeTest extends TestCase{
         super(testCase);
     }
     public static Test suite() {
-        return new TestSuite( com.github.abhayjoshi0102.Tree.BSTreeTest.class );
+        return new TestSuite( com.github.abhayjoshi0102.tree.BSTreeTest.class );
     }
     public void testBSTree() {
         BSTree bsTree = new BSTree();

@@ -1,4 +1,4 @@
-package com.github.abhayjoshi0102.Searching;
+package com.github.abhayjoshi0102.searching;
 
 import java.math.BigInteger;
 import java.util.BitSet;
@@ -103,20 +103,51 @@ public class MissingNumber {
      */
     public static int mathematicalApproachWithBigInteger(int [] array) {
         int missingNumber;
-        BigInteger sumOfArray = new BigInteger("0");
-        /* Above line can also be written as below:
+        /* Below line can also be written as below:
            BigInteger sumOfArray = BigInteger.valueOf(0);
          */
+        BigInteger sumOfArray = new BigInteger("0");
         for (int number : array) {
-            sumOfArray = sumOfArray.add(BigInteger.valueOf(number));
-            /* Above line can can also be written as below:
+            /* Below line can can also be written as below:
                sumOfArray = sumOfArray.add(new BigInteger(String.valueOf(number)));
              */
+            // Make sure to use assignment in below statement as BigInteger is immutable.
+            sumOfArray = sumOfArray.add(BigInteger.valueOf(number));
         }
         BigInteger arrayLengthPlusOne = new BigInteger(String.valueOf(array.length)).add(BigInteger.ONE);
         BigInteger sumOfNPlusOneNumber = arrayLengthPlusOne.multiply(arrayLengthPlusOne.add(BigInteger.ONE)).divide(BigInteger.valueOf(2));
         missingNumber = sumOfNPlusOneNumber.subtract(sumOfArray).intValue();
         if(missingNumber == arrayLengthPlusOne.intValue()) {
+            return -1;
+        }
+        return missingNumber;
+    }
+
+    /**
+     * There is a beautiful property of XOR, that is, if we XOR a number with itself, result will be zero.
+     * How can this property help us? In our problem there are two set of numbers, one which should be there from 1 to N+1,
+     * and other which are actually there. Now if we XOR first set of numbers with second set of numbers,
+     * all except of missing number will cancel each other. The final result will be the actual missing number.
+     *
+     * So we will use below two properties:
+     * x ^ x = 0
+     * x ^ 0 = x
+     *
+     * @param array array of numbers where you want to search the missing number
+     * @return the missing number. If no number is missing then returns -1.
+     */
+    public static int usingXorMethod(int [] array) {
+        int missingNumber=-1;
+        int xorOfArray = 0;
+        int xorOfNPlusOneNumber = 0;
+        for(int number : array) {
+            xorOfArray ^= number;
+        }
+        for (int i = 1; i <= array.length +1; i++) {
+            xorOfNPlusOneNumber ^= i;
+        }
+        missingNumber =  xorOfArray ^ xorOfNPlusOneNumber;
+        if(missingNumber == array.length + 1) {
             return -1;
         }
         return missingNumber;

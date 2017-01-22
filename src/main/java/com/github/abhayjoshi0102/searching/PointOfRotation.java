@@ -1,4 +1,4 @@
-package com.github.abhayjoshi0102.Searching;
+package com.github.abhayjoshi0102.searching;
 
 public class PointOfRotation {
 

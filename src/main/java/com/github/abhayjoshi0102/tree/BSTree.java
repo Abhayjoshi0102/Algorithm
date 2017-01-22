@@ -1,4 +1,4 @@
-package com.github.abhayjoshi0102.Tree;
+package com.github.abhayjoshi0102.tree;
 
 
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.github.abhayjoshi0102;
+package com.github.abhayjoshi0102.miscellaneous;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
@@ -17,7 +17,7 @@ import junit.framework.TestSuite;
         }
 
         public void testSquareRootFirstMethod() {
-            assertEquals(Math.sqrt(0),SquareRoot.getSquareRootFirstMethod(0));
+            assertEquals(Math.sqrt(0), SquareRoot.getSquareRootFirstMethod(0));
             assertEquals(1,SquareRoot.getSquareRootFirstMethod(1));
             assertEquals(1,SquareRoot.getSquareRootFirstMethod(3));
             assertEquals(2,SquareRoot.getSquareRootFirstMethod(4));

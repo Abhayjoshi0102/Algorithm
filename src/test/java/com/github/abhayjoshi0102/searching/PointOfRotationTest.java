@@ -1,4 +1,4 @@
-package com.github.abhayjoshi0102.Searching;
+package com.github.abhayjoshi0102.searching;
 
 
 import junit.framework.Test;
@@ -12,7 +12,7 @@ public class PointOfRotationTest extends TestCase {
     }
 
     public static Test suite() {
-        return new TestSuite(com.github.abhayjoshi0102.Searching.PointOfRotationTest.class );
+        return new TestSuite(com.github.abhayjoshi0102.searching.PointOfRotationTest.class );
     }
 
     public void testPointOfRotationTest() {

@@ -1,11 +1,11 @@
-package com.github.abhayjoshi0102.Searching;
+package com.github.abhayjoshi0102.searching;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
 /**
- * Test class for com.github.abhayjoshi0102.Searching.SmallestMissingNumber class.
+ * Test class for com.github.abhayjoshi0102.searching.SmallestMissingNumber class.
  */
 public class SmallestMissingNumberTest extends TestCase{
 
@@ -14,7 +14,7 @@ public class SmallestMissingNumberTest extends TestCase{
     }
 
     public static Test suite() {
-        return new TestSuite(com.github.abhayjoshi0102.Searching.SmallestMissingNumberTest.class);
+        return new TestSuite(com.github.abhayjoshi0102.searching.SmallestMissingNumberTest.class);
     }
 
     public void testSmallestMissingNumber() {

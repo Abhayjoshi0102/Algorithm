@@ -1,4 +1,4 @@
-package com.github.abhayjoshi0102.Searching;
+package com.github.abhayjoshi0102.searching;
 
 /**
  * Problem Statement: Given an array of sorted number of size N which contains numbers in range 1 to N-1, with some numbers missing.
